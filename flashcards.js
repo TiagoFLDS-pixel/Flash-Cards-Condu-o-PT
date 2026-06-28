@@ -1,5 +1,7 @@
 // Dados iniciais da app.
-// Para acrescentar cartões, basta adicionar objetos { id, pergunta, resposta } dentro do grupo pretendido.
+// Para acrescentar perguntas, adicione objetos com:
+// { id, categoria, pergunta, opcoes, respostaCorreta, explicacao }
+// dentro do grupo pretendido.
 
 const FLASHCARD_GROUPS = [
   {
@@ -9,23 +11,29 @@ const FLASHCARD_GROUPS = [
     cards: [
       {
         id: "g1-001",
+        categoria: "Conceitos fundamentais",
         pergunta: "O regulamento aplica-se a que viaturas?",
-        resposta: "A todas as viaturas e máquinas da Junta e às que estejam à sua guarda."
+        opcoes: [
+          "Apenas às viaturas ligeiras da Junta",
+          "A todas as viaturas e máquinas da Junta e às que estejam à sua guarda",
+          "Apenas às viaturas usadas em serviço externo",
+          "Apenas às viaturas pesadas"
+        ],
+        respostaCorreta: "A todas as viaturas e máquinas da Junta e às que estejam à sua guarda",
+        explicacao: "O âmbito inclui todas as viaturas e máquinas da Junta, incluindo as que estejam à sua guarda."
       },
       {
         id: "g1-002",
-        pergunta: "Como se classificam os veículos no regulamento?",
-        resposta: "Ciclomotores, ligeiros, pesados e máquinas/tratores."
-      },
-      {
-        id: "g1-003",
+        categoria: "Conceitos fundamentais",
         pergunta: "O que caracteriza um veículo ligeiro?",
-        resposta: "Peso bruto até 3500 kg e lotação até 9 lugares, incluindo o condutor."
-      },
-      {
-        id: "g1-004",
-        pergunta: "É necessária carta profissional para autocondução?",
-        resposta: "Não. É necessária carta válida para a categoria do veículo."
+        opcoes: [
+          "Peso bruto até 3500 kg e lotação até 9 lugares, incluindo o condutor",
+          "Peso bruto superior a 3500 kg",
+          "Qualquer veículo com caixa aberta",
+          "Veículo usado apenas para transporte de mercadorias"
+        ],
+        respostaCorreta: "Peso bruto até 3500 kg e lotação até 9 lugares, incluindo o condutor",
+        explicacao: "Um veículo ligeiro tem peso bruto até 3500 kg e lotação até 9 lugares, contando com o condutor."
       }
     ]
   },
@@ -36,23 +44,29 @@ const FLASHCARD_GROUPS = [
     cards: [
       {
         id: "g2-001",
+        categoria: "Responsabilidades",
         pergunta: "Quem paga as coimas por infrações ao Código da Estrada?",
-        resposta: "O condutor."
+        opcoes: [
+          "A Junta de Freguesia",
+          "O setor administrativo",
+          "O condutor",
+          "A entidade requisitante"
+        ],
+        respostaCorreta: "O condutor",
+        explicacao: "As coimas por infrações ao Código da Estrada são da responsabilidade do condutor."
       },
       {
         id: "g2-002",
-        pergunta: "O que deve verificar o condutor antes de iniciar a condução?",
-        resposta: "Óleo, água e pressão dos pneus."
-      },
-      {
-        id: "g2-003",
+        categoria: "Boletim de Serviço",
         pergunta: "Que documento deve ser preenchido após a utilização da viatura?",
-        resposta: "O Boletim de Serviço."
-      },
-      {
-        id: "g2-004",
-        pergunta: "Quem assegura a existência dos seguros das viaturas?",
-        resposta: "O setor administrativo da Junta de Freguesia."
+        opcoes: [
+          "Declaração amigável",
+          "Boletim de Serviço",
+          "Requisição de cedência",
+          "Guia de transporte"
+        ],
+        respostaCorreta: "Boletim de Serviço",
+        explicacao: "Após a utilização da viatura deve ser preenchido o Boletim de Serviço."
       }
     ]
   },
@@ -63,23 +77,29 @@ const FLASHCARD_GROUPS = [
     cards: [
       {
         id: "g3-001",
-        pergunta: "O condutor pode abandonar uma viatura imobilizada?",
-        resposta: "Não, deve manter-se junto da viatura até à sua remoção, se tiver condições."
+        categoria: "Acidentes",
+        pergunta: "Qual o primeiro procedimento documental em caso de acidente?",
+        opcoes: [
+          "Preencher a Declaração Amigável de Acidente Automóvel",
+          "Abandonar a viatura e informar depois",
+          "Pedir uma nova viatura sem registo",
+          "Preencher apenas o Boletim de Serviço"
+        ],
+        respostaCorreta: "Preencher a Declaração Amigável de Acidente Automóvel",
+        explicacao: "Em caso de acidente, o primeiro procedimento documental é preencher a declaração amigável."
       },
       {
         id: "g3-002",
-        pergunta: "Qual o primeiro procedimento documental em caso de acidente?",
-        resposta: "Preencher a Declaração Amigável de Acidente Automóvel."
-      },
-      {
-        id: "g3-003",
-        pergunta: "Quando é obrigatória a intervenção policial num acidente?",
-        resposta: "Quando há recusa de declaração, falta de documentos, fuga, suspeita de álcool/drogas, danos corporais ou danos graves."
-      },
-      {
-        id: "g3-004",
+        categoria: "Infrações",
         pergunta: "Usar a viatura para fins particulares constitui infração?",
-        resposta: "Sim, constitui infração disciplinar."
+        opcoes: [
+          "Não, desde que seja fora do horário de serviço",
+          "Sim, constitui infração disciplinar",
+          "Só constitui infração se houver acidente",
+          "Não, se o combustível for pago pelo condutor"
+        ],
+        respostaCorreta: "Sim, constitui infração disciplinar",
+        explicacao: "A utilização da viatura para fins particulares não autorizados constitui infração disciplinar."
       }
     ]
   },
@@ -90,23 +110,29 @@ const FLASHCARD_GROUPS = [
     cards: [
       {
         id: "g4-001",
+        categoria: "Cedência",
         pergunta: "Qual a antecedência mínima para pedir uma viatura?",
-        resposta: "Pelo menos uma semana."
+        opcoes: [
+          "24 horas",
+          "Pelo menos uma semana",
+          "No próprio dia",
+          "Um mês"
+        ],
+        respostaCorreta: "Pelo menos uma semana",
+        explicacao: "O pedido de viatura deve ser feito com pelo menos uma semana de antecedência."
       },
       {
         id: "g4-002",
-        pergunta: "Após quantos minutos de atraso pode ser cancelada a cedência?",
-        resposta: "Após 30 minutos sem comparência nem justificação."
-      },
-      {
-        id: "g4-003",
-        pergunta: "Quem paga combustível, portagens e estacionamento?",
-        resposta: "A entidade requisitante."
-      },
-      {
-        id: "g4-004",
-        pergunta: "A Junta pode cancelar uma cedência já autorizada?",
-        resposta: "Sim, em situações de força maior, avaria, necessidade urgente ou iniciativa de grande relevo."
+        categoria: "Encargos",
+        pergunta: "Quem paga combustível, portagens e estacionamento numa cedência?",
+        opcoes: [
+          "A Junta de Freguesia",
+          "O condutor",
+          "A entidade requisitante",
+          "O setor administrativo"
+        ],
+        respostaCorreta: "A entidade requisitante",
+        explicacao: "Os encargos como combustível, portagens e estacionamento cabem à entidade requisitante."
       }
     ]
   }
