@@ -1,20 +1,21 @@
 :root {
-  --bg: #edf7f0;
+  --bg: #eef7f1;
   --surface: #ffffff;
-  --surface-soft: #f5fbf7;
-  --text: #153323;
-  --muted: #5b7164;
-  --primary: #1f7a4d;
-  --primary-dark: #125532;
-  --primary-soft: #d9f1e3;
-  --danger: #b43b3b;
-  --danger-soft: #ffe5e5;
-  --warning: #a06410;
-  --warning-soft: #fff2d7;
-  --success: #247a3d;
-  --success-soft: #def6e6;
-  --border: #d3e5d9;
-  --shadow: 0 16px 40px rgba(22, 70, 43, 0.14);
+  --surface-soft: #f6fbf7;
+  --text: #102f21;
+  --muted: #516b5c;
+  --primary: #16724a;
+  --primary-dark: #0d4f31;
+  --primary-soft: #dff1e7;
+  --danger: #a5202a;
+  --danger-dark: #7f1720;
+  --warning: #8a5600;
+  --warning-dark: #684000;
+  --success: #126836;
+  --success-dark: #0a4b26;
+  --border: #cfe3d6;
+  --shadow: 0 12px 28px rgba(20, 82, 48, 0.12);
+  --radius: 8px;
 }
 
 * {
@@ -26,13 +27,16 @@ body {
   min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top, #f9fff9 0, var(--bg) 42%, #e3f0e8 100%);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0)),
+    var(--bg);
 }
 
 button {
   border: 0;
   font: inherit;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:disabled {
@@ -41,16 +45,15 @@ button:disabled {
 }
 
 .app-shell {
-  width: min(960px, 100%);
+  width: min(880px, 100%);
   margin: 0 auto;
-  padding: 20px 16px 40px;
+  padding: 16px 14px 36px;
 }
 
 .app-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 16px;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 22px;
 }
 
@@ -71,8 +74,8 @@ p {
 
 h1 {
   margin-bottom: 6px;
-  font-size: clamp(2rem, 9vw, 3.5rem);
-  line-height: 0.95;
+  font-size: 2.2rem;
+  line-height: 1;
 }
 
 .subtitle {
@@ -92,14 +95,14 @@ h1 {
 .summary-card,
 .flashcard,
 .group-card {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--surface);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  border-radius: 24px;
+  border-radius: var(--radius);
 }
 
 .summary-card {
-  padding: 18px;
+  padding: 16px;
   margin-bottom: 16px;
 }
 
@@ -147,7 +150,9 @@ h1 {
 }
 
 .group-card {
-  padding: 18px;
+  display: grid;
+  gap: 12px;
+  padding: 16px;
 }
 
 .group-card h3 {
@@ -156,21 +161,21 @@ h1 {
 }
 
 .group-card p {
-  margin-bottom: 14px;
+  margin-bottom: 0;
   color: var(--muted);
 }
 
 .group-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
   gap: 12px;
+  margin-top: 2px;
 }
 
 .group-progress {
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 700;
+  line-height: 1.35;
 }
 
 .primary-button,
@@ -179,9 +184,9 @@ h1 {
 .success-button,
 .danger-button,
 .warning-button {
-  min-height: 46px;
+  min-height: 48px;
   padding: 12px 16px;
-  border-radius: 14px;
+  border-radius: var(--radius);
   font-weight: 800;
   transition: transform 120ms ease, box-shadow 120ms ease;
 }
@@ -197,34 +202,38 @@ h1 {
 
 .primary-button {
   color: white;
-  background: var(--primary);
-  box-shadow: 0 8px 18px rgba(31, 122, 77, 0.24);
+  background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+  box-shadow: 0 8px 16px rgba(22, 114, 74, 0.22);
 }
 
 .secondary-button {
   color: var(--primary-dark);
   background: var(--primary-soft);
+  border: 1px solid #b8dbc8;
 }
 
 .ghost-button {
   color: var(--primary-dark);
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.86);
   border: 1px solid var(--border);
 }
 
 .success-button {
-  color: var(--success);
-  background: var(--success-soft);
+  color: white;
+  background: linear-gradient(180deg, var(--success), var(--success-dark));
+  box-shadow: 0 8px 16px rgba(18, 104, 54, 0.24);
 }
 
 .danger-button {
-  color: var(--danger);
-  background: var(--danger-soft);
+  color: white;
+  background: linear-gradient(180deg, var(--danger), var(--danger-dark));
+  box-shadow: 0 8px 16px rgba(165, 32, 42, 0.24);
 }
 
 .warning-button {
-  color: var(--warning);
-  background: var(--warning-soft);
+  color: white;
+  background: linear-gradient(180deg, var(--warning), var(--warning-dark));
+  box-shadow: 0 8px 16px rgba(138, 86, 0, 0.24);
 }
 
 .study-nav,
@@ -233,6 +242,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
   margin-bottom: 14px;
 }
 
@@ -244,24 +254,25 @@ h1 {
 }
 
 .flashcard {
-  min-height: 280px;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 24px;
+  padding: 20px;
   margin-bottom: 16px;
 }
 
 .flashcard h2 {
   margin: 6px 0 0;
-  font-size: clamp(1.45rem, 7vw, 2.3rem);
-  line-height: 1.12;
+  font-size: 1.45rem;
+  line-height: 1.16;
+  overflow-wrap: anywhere;
 }
 
 .answer-box {
   margin-top: 22px;
   padding: 16px;
-  border-radius: 18px;
+  border-radius: var(--radius);
   background: var(--surface-soft);
   border: 1px solid var(--border);
 }
@@ -287,12 +298,36 @@ h1 {
   text-align: center;
   background: var(--surface);
   border: 1px dashed var(--border);
-  border-radius: 18px;
+  border-radius: var(--radius);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(22, 114, 74, 0.28);
+  outline-offset: 3px;
+}
+
+.grade-buttons {
+  margin-top: 2px;
+}
+
+.grade-buttons .success-button,
+.grade-buttons .danger-button,
+.grade-buttons .warning-button {
+  min-height: 54px;
 }
 
 @media (min-width: 680px) {
   .app-shell {
-    padding-top: 36px;
+    padding: 32px 20px 48px;
+  }
+
+  .app-header {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+
+  h1 {
+    font-size: 3rem;
   }
 
   .action-row,
@@ -302,5 +337,19 @@ h1 {
 
   .groups-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .group-footer {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .flashcard {
+    min-height: 300px;
+    padding: 28px;
+  }
+
+  .flashcard h2 {
+    font-size: 2.1rem;
   }
 }
