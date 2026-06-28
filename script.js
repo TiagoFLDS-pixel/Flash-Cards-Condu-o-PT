@@ -1,4 +1,5 @@
 const STORAGE_KEY = "flashcards-conducao-progress-v1";
+const VALID_STATUSES = new Set(["right", "wrong", "hard"]);
 
 const state = {
   progress: loadProgress(),
@@ -94,7 +95,7 @@ function renderHome() {
 
 function startSession(mode, cards) {
   state.currentMode = mode;
-  state.sessionCards = cards;
+  state.sessionCards = Array.isArray(cards) ? cards : [];
   state.currentIndex = 0;
   state.answerVisible = false;
 
@@ -149,7 +150,7 @@ function showAnswer() {
 
 function gradeCurrentCard(status) {
   const current = state.sessionCards[state.currentIndex];
-  if (!current) return;
+  if (!current || !VALID_STATUSES.has(status)) return;
 
   state.progress[current.card.id] = {
     status,
@@ -195,7 +196,8 @@ function getCardsByStatus(status, shuffled = false) {
 }
 
 function getCardStatus(cardId) {
-  return state.progress[cardId]?.status || "new";
+  const status = state.progress[cardId]?.status;
+  return VALID_STATUSES.has(status) ? status : "new";
 }
 
 function getSessionStats() {
@@ -214,7 +216,7 @@ function getSessionStats() {
 function loadProgress() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : {};
+    return normalizeProgress(raw ? JSON.parse(raw) : {});
   } catch (error) {
     console.warn("Não foi possível carregar o progresso.", error);
     return {};
@@ -222,7 +224,21 @@ function loadProgress() {
 }
 
 function saveProgress() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
+  } catch (error) {
+    console.warn("Não foi possível guardar o progresso.", error);
+  }
+}
+
+function normalizeProgress(progress) {
+  if (!progress || typeof progress !== "object" || Array.isArray(progress)) {
+    return {};
+  }
+
+  return Object.fromEntries(
+    Object.entries(progress).filter(([, value]) => value && VALID_STATUSES.has(value.status))
+  );
 }
 
 function shuffle(items) {
