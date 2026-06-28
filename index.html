@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flash Cards Condução PT</title>
+  <title>Quiz Condução PT</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,15 +11,15 @@
     <header class="app-header">
       <div>
         <p class="eyebrow">Estudo de condução</p>
-        <h1>Flash Cards</h1>
-        <p class="subtitle">Estuda por grupos, revê as erradas e acompanha o teu progresso.</p>
+        <h1>Quiz Condução PT</h1>
+        <p class="subtitle">Responde como num exame, revê as erradas e acompanha o teu progresso.</p>
       </div>
       <button id="resetProgressBtn" class="ghost-button" type="button">Reiniciar</button>
     </header>
 
     <section id="homeView" class="view active">
       <div class="summary-card">
-        <span>Total dominadas</span>
+        <span>Total certas</span>
         <strong id="totalMastered">0/0</strong>
         <div class="progress-track" aria-hidden="true">
           <div id="totalProgressBar" class="progress-fill"></div>
@@ -29,7 +29,6 @@
       <div class="action-row">
         <button id="randomModeBtn" class="primary-button" type="button">Modo aleatório</button>
         <button id="reviewWrongBtn" class="secondary-button" type="button">Rever erradas</button>
-        <button id="reviewHardBtn" class="secondary-button" type="button">Rever difíceis</button>
       </div>
 
       <h2>Grupos de estudo</h2>
@@ -44,28 +43,24 @@
 
       <div class="card-status">
         <span id="cardCounter">0/0</span>
-        <span id="cardStats">0 certas · 0 erradas · 0 difíceis</span>
+        <span id="cardStats">0 certas · 0 erradas · 0 tentativas</span>
       </div>
 
       <article class="flashcard" aria-live="polite">
         <p id="cardGroupLabel" class="card-group-label"></p>
         <h2 id="questionText">Pergunta</h2>
-        <div id="answerBox" class="answer-box hidden">
-          <span>Resposta</span>
-          <p id="answerText"></p>
+        <div id="optionsContainer" class="options-grid"></div>
+        <div id="feedbackBox" class="feedback-box hidden" aria-live="polite">
+          <strong id="feedbackTitle"></strong>
+          <p id="explanationText"></p>
         </div>
       </article>
 
       <div class="study-actions">
-        <button id="showAnswerBtn" class="primary-button" type="button">Mostrar resposta</button>
-        <div id="gradeButtons" class="grade-buttons hidden">
-          <button id="wrongBtn" class="danger-button" type="button">Errei</button>
-          <button id="hardBtn" class="warning-button" type="button">Difícil</button>
-          <button id="rightBtn" class="success-button" type="button">Acertei</button>
-        </div>
+        <button id="nextQuestionBtn" class="primary-button hidden" type="button">Próxima pergunta</button>
       </div>
 
-      <p id="emptyState" class="empty-state hidden">Não há cartões para rever neste modo.</p>
+      <p id="emptyState" class="empty-state hidden">Não há perguntas para rever neste modo.</p>
     </section>
   </main>
 
