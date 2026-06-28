@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "sinalizacao-001",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinais de obrigação",
+    "pergunta": "Um sinal circular azul com seta branca para a direita indica:",
+    "opcoes": [
+      "Perigo de curva à direita",
+      "Obrigação de seguir pela direita",
+      "Proibição de virar à direita",
+      "Fim de obrigação"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Os sinais circulares azuis indicam, em regra, obrigação. Uma seta branca define o sentido obrigatório."
+  },
+  {
+    "id": "sinalizacao-002",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinais de proibição",
+    "pergunta": "Um sinal circular de fundo branco com orla vermelha indica geralmente:",
+    "opcoes": [
+      "Obrigação",
+      "Indicação turística",
+      "Proibição ou restrição",
+      "Perigo temporário"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "Os sinais circulares com orla vermelha indicam normalmente proibições ou restrições."
+  },
+  {
+    "id": "sinalizacao-003",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinais de perigo",
+    "pergunta": "Os sinais de perigo têm, regra geral, que forma?",
+    "opcoes": [
+      "Triangular",
+      "Circular azul",
+      "Retangular azul",
+      "Quadrada verde"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Os sinais de perigo são normalmente triangulares e alertam o condutor para situações que exigem especial atenção."
+  },
+  {
+    "id": "sinalizacao-004",
+    "categoria": "Sinalização",
+    "subcategoria": "STOP",
+    "pergunta": "Perante um sinal STOP, o condutor deve:",
+    "opcoes": [
+      "Apenas abrandar se não houver trânsito",
+      "Parar obrigatoriamente e ceder passagem",
+      "Acelerar para libertar rapidamente o cruzamento",
+      "Parar apenas se vier trânsito da esquerda"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "O STOP obriga à paragem completa e à cedência de passagem antes de avançar em segurança."
+  },
+  {
+    "id": "sinalizacao-005",
+    "categoria": "Sinalização",
+    "subcategoria": "Cedência",
+    "pergunta": "Perante um sinal de cedência de passagem, o condutor deve:",
+    "opcoes": [
+      "Parar sempre, mesmo sem trânsito",
+      "Ceder passagem aos veículos com prioridade",
+      "Avançar sempre primeiro",
+      "Buzinar antes de entrar no cruzamento"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "O condutor deve ceder passagem aos veículos que circulam na via prioritária, parando se necessário."
+  },
+  {
+    "id": "sinalizacao-006",
+    "categoria": "Sinalização",
+    "subcategoria": "Marcas rodoviárias",
+    "pergunta": "Uma linha longitudinal contínua no eixo da via significa que, em regra, é proibido:",
+    "opcoes": [
+      "Circular à direita",
+      "Transpor ou pisar essa linha",
+      "Reduzir a velocidade",
+      "Usar luzes de cruzamento"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A linha contínua separadora de sentidos não deve ser pisada ou transposta, salvo exceções previstas."
+  },
+  {
+    "id": "sinalizacao-007",
+    "categoria": "Sinalização",
+    "subcategoria": "Marcas rodoviárias",
+    "pergunta": "Uma linha longitudinal descontínua permite ao condutor:",
+    "opcoes": [
+      "Ultrapassar sempre sem observar o trânsito",
+      "Transpô-la quando a manobra for permitida e segura",
+      "Parar em cima da linha",
+      "Circular obrigatoriamente sobre a linha"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A linha descontínua pode ser transposta, mas apenas quando a manobra for permitida e feita em segurança."
+  },
+  {
+    "id": "sinalizacao-008",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinais luminosos",
+    "pergunta": "Perante luz vermelha do semáforo, o condutor deve:",
+    "opcoes": [
+      "Parar antes da linha de paragem",
+      "Avançar se não houver peões",
+      "Avançar com velocidade reduzida",
+      "Parar apenas se houver polícia"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A luz vermelha impõe paragem obrigatória antes da linha de paragem ou antes do sinal."
+  },
+  {
+    "id": "sinalizacao-009",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinais luminosos",
+    "pergunta": "A luz amarela fixa do semáforo significa que o condutor deve:",
+    "opcoes": [
+      "Acelerar para passar antes do vermelho",
+      "Parar, salvo se já não o puder fazer em segurança",
+      "Avançar sempre com cuidado",
+      "Parar apenas se houver peões"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A luz amarela fixa indica paragem, exceto se a paragem já não puder ser feita com segurança."
+  },
+  {
+    "id": "sinalizacao-010",
+    "categoria": "Sinalização",
+    "subcategoria": "Agentes de trânsito",
+    "pergunta": "As ordens dadas por agente regulador do trânsito prevalecem sobre:",
+    "opcoes": [
+      "Apenas sinais verticais",
+      "Apenas marcas rodoviárias",
+      "Sinais luminosos, sinais verticais e marcas rodoviárias",
+      "Nenhum tipo de sinalização"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "As ordens dos agentes reguladores prevalecem sobre a sinalização existente."
+  },
+  {
+    "id": "sinalizacao-011",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinais de indicação",
+    "pergunta": "Os sinais retangulares ou quadrados de fundo azul indicam, em regra:",
+    "opcoes": [
+      "Proibições",
+      "Perigos graves",
+      "Informações ou indicações úteis",
+      "Fim de todas as restrições"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "Muitos sinais de indicação usam fundo azul e fornecem informação útil ao condutor."
+  },
+  {
+    "id": "sinalizacao-012",
+    "categoria": "Sinalização",
+    "subcategoria": "Passagem de peões",
+    "pergunta": "Ao aproximar-se de uma passagem para peões, o condutor deve:",
+    "opcoes": [
+      "Aumentar a velocidade",
+      "Reduzir a velocidade e estar preparado para parar",
+      "Buzinar sempre",
+      "Parar apenas se houver semáforo"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Nas passagens para peões, o condutor deve moderar especialmente a velocidade e ceder passagem quando necessário."
+  },
+  {
+    "id": "sinalizacao-013",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinalização temporária",
+    "pergunta": "A sinalização temporária de obras deve ser respeitada:",
+    "opcoes": [
+      "Apenas durante a noite",
+      "Apenas se houver trabalhadores visíveis",
+      "Sempre que esteja colocada na via",
+      "Só em autoestrada"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "A sinalização temporária altera as condições normais de circulação e deve ser cumprida sempre que esteja colocada."
+  },
+  {
+    "id": "sinalizacao-014",
+    "categoria": "Sinalização",
+    "subcategoria": "Sentido proibido",
+    "pergunta": "O sinal de sentido proibido indica que:",
+    "opcoes": [
+      "É obrigatório virar à direita",
+      "É proibido entrar naquela via pelo sentido assinalado",
+      "A via é reservada a peões",
+      "A velocidade máxima é reduzida"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "O sinal de sentido proibido impede a entrada nesse sentido de circulação."
+  },
+  {
+    "id": "sinalizacao-015",
+    "categoria": "Sinalização",
+    "subcategoria": "Velocidade",
+    "pergunta": "Um sinal circular com o número 50 e orla vermelha indica:",
+    "opcoes": [
+      "Velocidade aconselhada de 50 km/h",
+      "Velocidade mínima de 50 km/h",
+      "Proibição de exceder 50 km/h",
+      "Fim da localidade"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "O sinal de limite máximo de velocidade proíbe circular acima do valor indicado."
+  },
+  {
+    "id": "sinalizacao-016",
+    "categoria": "Sinalização",
+    "subcategoria": "Estacionamento",
+    "pergunta": "Um sinal de proibição de estacionamento significa que:",
+    "opcoes": [
+      "É proibido parar por qualquer motivo",
+      "É proibido estacionar, mas pode ser permitida paragem breve se não houver outra proibição",
+      "É obrigatório estacionar naquele local",
+      "É permitido estacionar apenas à noite"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Proibição de estacionamento não é o mesmo que proibição de paragem, salvo quando a sinalização também o indique."
+  },
+  {
+    "id": "sinalizacao-017",
+    "categoria": "Sinalização",
+    "subcategoria": "Paragem e estacionamento",
+    "pergunta": "Um sinal de proibição de parar e estacionar significa que:",
+    "opcoes": [
+      "Pode parar por poucos minutos",
+      "Pode estacionar se ligar os quatro piscas",
+      "Não pode parar nem estacionar no local abrangido",
+      "Pode parar apenas para largar passageiros"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "A proibição de parar e estacionar é mais restritiva do que a simples proibição de estacionamento."
+  },
+  {
+    "id": "sinalizacao-018",
+    "categoria": "Sinalização",
+    "subcategoria": "Prioridade",
+    "pergunta": "Um sinal de via com prioridade informa que:",
+    "opcoes": [
+      "O condutor deve ceder sempre passagem",
+      "A via onde circula tem prioridade nos cruzamentos abrangidos",
+      "É proibido ultrapassar",
+      "A via é reservada a transportes públicos"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "O sinal de via com prioridade indica prioridade relativamente aos veículos que venham de vias transversais."
+  },
+  {
+    "id": "sinalizacao-019",
+    "categoria": "Sinalização",
+    "subcategoria": "Fim de proibição",
+    "pergunta": "Um sinal circular branco com barras pretas diagonais pode indicar:",
+    "opcoes": [
+      "Início de proibição",
+      "Fim de todas as proibições anteriormente impostas a veículos em marcha",
+      "Obrigação de parar",
+      "Perigo de derrapagem"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Este tipo de sinal indica o fim das proibições previamente impostas aos veículos em marcha."
+  },
+  {
+    "id": "sinalizacao-020",
+    "categoria": "Sinalização",
+    "subcategoria": "Pistas obrigatórias",
+    "pergunta": "Um sinal azul com símbolo de bicicleta indica geralmente:",
+    "opcoes": [
+      "Proibição de bicicletas",
+      "Pista obrigatória para velocípedes",
+      "Perigo de ciclistas",
+      "Estacionamento reservado a bicicletas"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Sinais azuis circulares com símbolo indicam obrigação, neste caso relacionada com velocípedes."
+  },
+  {
+    "id": "sinalizacao-021",
+    "categoria": "Sinalização",
+    "subcategoria": "Marcas rodoviárias",
+    "pergunta": "A linha de paragem junto a um STOP ou semáforo serve para indicar:",
+    "opcoes": [
+      "O local onde o veículo deve imobilizar-se",
+      "O início de uma via reservada",
+      "O fim de uma zona urbana",
+      "A zona onde é obrigatório estacionar"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A linha de paragem marca o local onde o condutor deve parar quando obrigado."
+  },
+  {
+    "id": "sinalizacao-022",
+    "categoria": "Sinalização",
+    "subcategoria": "Setas no pavimento",
+    "pergunta": "Setas pintadas no pavimento indicam:",
+    "opcoes": [
+      "Direções permitidas ou obrigatórias para aquela via de trânsito",
+      "Apenas decoração da faixa de rodagem",
+      "Proibição de circular naquela via",
+      "Zona exclusiva de estacionamento"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "As setas de seleção orientam o condutor sobre os sentidos permitidos ou obrigatórios em cada via."
+  },
+  {
+    "id": "sinalizacao-023",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinalização luminosa",
+    "pergunta": "Uma luz verde no semáforo permite avançar:",
+    "opcoes": [
+      "Sempre, sem observar os restantes utentes",
+      "Desde que a manobra possa ser feita em segurança",
+      "Apenas se houver agente de trânsito",
+      "Mesmo que bloqueie o cruzamento"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A luz verde permite avançar, mas o condutor deve garantir que o faz em segurança e sem bloquear a circulação."
+  },
+  {
+    "id": "sinalizacao-024",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinalização vertical",
+    "pergunta": "Quando um sinal vertical contradiz uma ordem de agente de trânsito, o condutor deve obedecer:",
+    "opcoes": [
+      "Ao sinal vertical",
+      "À ordem do agente",
+      "À regra geral da prioridade à direita",
+      "Ao veículo que chegou primeiro"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "As ordens dos agentes reguladores prevalecem sobre a restante sinalização."
+  },
+  {
+    "id": "sinalizacao-025",
+    "categoria": "Sinalização",
+    "subcategoria": "Perigo",
+    "pergunta": "Um sinal triangular com crianças representa:",
+    "opcoes": [
+      "Zona de estacionamento escolar",
+      "Perigo pela possível presença de crianças",
+      "Obrigação de transportar crianças",
+      "Proibição de circulação de peões"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "O sinal alerta para a possível presença de crianças, exigindo velocidade moderada e atenção reforçada."
+  },
+  {
+    "id": "sinalizacao-026",
+    "categoria": "Sinalização",
+    "subcategoria": "Perigo",
+    "pergunta": "Um sinal triangular com desenho de lomba ou depressão indica:",
+    "opcoes": [
+      "Obrigação de acelerar",
+      "Perigo de lomba ou depressão na via",
+      "Fim de piso irregular",
+      "Proibição de travar"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Este sinal alerta para irregularidades no pavimento que podem afetar a estabilidade do veículo."
+  },
+  {
+    "id": "sinalizacao-027",
+    "categoria": "Sinalização",
+    "subcategoria": "Indicação",
+    "pergunta": "Um sinal que indica hospital deve levar o condutor a:",
+    "opcoes": [
+      "Buzinar para avisar a sua presença",
+      "Circular com especial cuidado e evitar ruído desnecessário",
+      "Parar sempre antes do hospital",
+      "Ligar obrigatoriamente os quatro piscas"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Junto a hospitais deve conduzir-se com especial atenção e evitar ruídos desnecessários."
+  },
+  {
+    "id": "sinalizacao-028",
+    "categoria": "Sinalização",
+    "subcategoria": "Marcas rodoviárias",
+    "pergunta": "Uma zona zebrada no pavimento serve geralmente para:",
+    "opcoes": [
+      "Permitir estacionamento temporário",
+      "Canalizar ou separar fluxos de trânsito, não devendo ser pisada sem necessidade",
+      "Indicar zona de carga e descarga",
+      "Permitir circulação de peões em qualquer sentido"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "As zonas zebradas organizam a circulação e normalmente não devem ser utilizadas pelos veículos."
+  },
+  {
+    "id": "sinalizacao-029",
+    "categoria": "Sinalização",
+    "subcategoria": "Via reservada",
+    "pergunta": "Uma via sinalizada como reservada a transportes públicos deve ser usada:",
+    "opcoes": [
+      "Por qualquer veículo em hora de ponta",
+      "Apenas pelos veículos autorizados",
+      "Por veículos ligeiros se estiver livre",
+      "Por motociclos sempre"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "As vias reservadas destinam-se aos veículos indicados na sinalização."
+  },
+  {
+    "id": "sinalizacao-030",
+    "categoria": "Sinalização",
+    "subcategoria": "Sinais de perigo",
+    "pergunta": "Ao ver um sinal de perigo, o condutor deve principalmente:",
+    "opcoes": [
+      "Manter sempre a mesma velocidade",
+      "Aumentar a velocidade para passar rapidamente",
+      "Redobrar a atenção e adaptar a velocidade",
+      "Parar imediatamente em todos os casos"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "Os sinais de perigo exigem atenção reforçada e adaptação da velocidade às condições da via."
+  },
+  {
+    "id": "circulacao-001",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Cedência de passagem",
+    "pergunta": "Num cruzamento sem sinalização, quando dois veículos se apresentam em vias diferentes, em regra deve ceder passagem:",
+    "opcoes": [
+      "Quem se apresenta pela direita",
+      "Quem se apresenta pela esquerda",
+      "O veículo mais rápido",
+      "O veículo pesado"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Na regra geral, deve ceder passagem ao veículo que se apresenta pela direita. Logo, quem tem o outro à direita cede."
+  },
+  {
+    "id": "circulacao-002",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Rotundas",
+    "pergunta": "Ao entrar numa rotunda, o condutor deve normalmente:",
+    "opcoes": [
+      "Ceder passagem aos veículos que já circulam na rotunda",
+      "Entrar sempre sem abrandar",
+      "Ter prioridade sobre todos os veículos da rotunda",
+      "Parar sempre durante 5 segundos"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Quem entra numa rotunda deve ceder passagem aos veículos que nela já circulam."
+  },
+  {
+    "id": "circulacao-003",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Ultrapassagem",
+    "pergunta": "A ultrapassagem deve ser feita, em regra:",
+    "opcoes": [
+      "Pela direita",
+      "Pela esquerda",
+      "Pela berma",
+      "Pelo lado que estiver mais livre, sem regra"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A ultrapassagem faz-se em regra pela esquerda, exceto situações específicas previstas."
+  },
+  {
+    "id": "circulacao-004",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Ultrapassagem",
+    "pergunta": "Antes de iniciar uma ultrapassagem, o condutor deve:",
+    "opcoes": [
+      "Aproximar-se muito do veículo da frente",
+      "Confirmar que pode realizar a manobra sem perigo",
+      "Buzinar sempre prolongadamente",
+      "Ligar os quatro piscas"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A ultrapassagem só deve ser iniciada quando for permitida e puder ser realizada em segurança."
+  },
+  {
+    "id": "circulacao-005",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Mudança de direção",
+    "pergunta": "Para mudar de direção, o condutor deve sinalizar a manobra:",
+    "opcoes": [
+      "Apenas se houver veículos atrás",
+      "Com antecedência suficiente",
+      "Só depois de começar a virar",
+      "Apenas à noite"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "As manobras devem ser sinalizadas com antecedência para permitir reação dos restantes utentes."
+  },
+  {
+    "id": "circulacao-006",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Mudança de via",
+    "pergunta": "Antes de mudar de via de trânsito, o condutor deve:",
+    "opcoes": [
+      "Verificar espelhos, sinalizar e confirmar o ângulo morto",
+      "Mudar rapidamente sem sinalizar",
+      "Usar apenas o espelho interior",
+      "Buzinar e mudar imediatamente"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A mudança de via exige observação, sinalização e confirmação de que não há perigo."
+  },
+  {
+    "id": "circulacao-007",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Distância lateral",
+    "pergunta": "Ao ultrapassar um velocípede, o condutor deve:",
+    "opcoes": [
+      "Passar o mais próximo possível",
+      "Manter distância lateral de segurança",
+      "Buzinar continuamente",
+      "Obrigar o velocípede a parar"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Deve garantir distância lateral suficiente para proteger o ciclista e evitar desequilíbrio ou colisão."
+  },
+  {
+    "id": "circulacao-008",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Marcha atrás",
+    "pergunta": "A marcha atrás deve ser efetuada:",
+    "opcoes": [
+      "Apenas durante o tempo e distância indispensáveis",
+      "Sempre que o condutor quiser corrigir o percurso",
+      "Em autoestrada se falhar a saída",
+      "Sem necessidade de observar a retaguarda"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A marcha atrás é uma manobra perigosa e deve ser limitada ao estritamente necessário."
+  },
+  {
+    "id": "circulacao-009",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Autoestrada",
+    "pergunta": "Se falhar uma saída na autoestrada, o condutor deve:",
+    "opcoes": [
+      "Fazer marcha atrás pela berma",
+      "Inverter o sentido de marcha",
+      "Continuar até à próxima saída",
+      "Parar e pedir indicação a outros condutores"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "Em autoestrada é proibido inverter marcha ou fazer marcha atrás; deve seguir até uma saída segura."
+  },
+  {
+    "id": "circulacao-010",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Prioridade",
+    "pergunta": "Ao sair de um parque de estacionamento para a via pública, o condutor deve:",
+    "opcoes": [
+      "Ter prioridade por estar a entrar na via",
+      "Ceder passagem aos veículos que circulam na via pública",
+      "Avançar se usar pisca",
+      "Buzinar e avançar"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Quem sai de local privado, parque ou caminho particular deve ceder passagem aos veículos da via pública."
+  },
+  {
+    "id": "circulacao-011",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Peões",
+    "pergunta": "Perante peões que iniciaram a travessia numa passadeira, o condutor deve:",
+    "opcoes": [
+      "Aumentar a velocidade para passar primeiro",
+      "Parar e permitir a travessia",
+      "Buzinar para os peões recuarem",
+      "Desviar para a esquerda sem reduzir"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "O condutor deve ceder passagem aos peões que atravessam ou se preparam para atravessar em passadeira."
+  },
+  {
+    "id": "circulacao-012",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Rotundas",
+    "pergunta": "Numa rotunda, para sair na primeira saída, o condutor deve normalmente circular:",
+    "opcoes": [
+      "Pela via mais à direita",
+      "Sempre pela via mais à esquerda",
+      "Pela berma",
+      "Em ziguezague entre vias"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Para sair na primeira saída, deve ocupar a via da direita, salvo sinalização ou condições especiais."
+  },
+  {
+    "id": "circulacao-013",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Rotundas",
+    "pergunta": "Ao sair de uma rotunda, o condutor deve:",
+    "opcoes": [
+      "Sinalizar a saída com o indicador de direção",
+      "Sair sem sinalizar para não confundir",
+      "Parar sempre antes da saída",
+      "Acelerar obrigatoriamente"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A saída da rotunda deve ser sinalizada para informar os restantes utentes."
+  },
+  {
+    "id": "circulacao-014",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Cruzamentos",
+    "pergunta": "Entrar num cruzamento quando não é possível sair dele de imediato pode:",
+    "opcoes": [
+      "Bloquear a circulação e deve ser evitado",
+      "Ser sempre obrigatório",
+      "Ser permitido se o semáforo estiver verde",
+      "Dar prioridade ao veículo"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Mesmo com prioridade ou semáforo verde, não se deve entrar se for previsível ficar a bloquear a interseção."
+  },
+  {
+    "id": "circulacao-015",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Veículos prioritários",
+    "pergunta": "Ao aproximar-se uma ambulância em serviço urgente devidamente assinalada, o condutor deve:",
+    "opcoes": [
+      "Impedir a passagem se tiver prioridade",
+      "Facilitar a passagem com segurança",
+      "Acompanhar a ambulância para ganhar tempo",
+      "Parar sempre no meio da via"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Deve facilitar a passagem aos veículos prioritários, sem criar perigo para si ou para terceiros."
+  },
+  {
+    "id": "circulacao-016",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Estacionamento",
+    "pergunta": "É proibido estacionar em local onde o veículo impeça:",
+    "opcoes": [
+      "A visibilidade ou passagem de outros utentes",
+      "A visualização da matrícula por peões",
+      "O acesso ao rádio do veículo",
+      "A abertura das janelas"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "O estacionamento não deve prejudicar a segurança, a visibilidade ou a fluidez do trânsito."
+  },
+  {
+    "id": "circulacao-017",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Paragem",
+    "pergunta": "Parar em segunda fila é, em regra:",
+    "opcoes": [
+      "Permitido se for por pouco tempo",
+      "Proibido por prejudicar a circulação",
+      "Obrigatório em vias estreitas",
+      "Permitido com quatro piscas ligados"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A paragem em segunda fila tende a impedir ou dificultar a circulação e é proibida."
+  },
+  {
+    "id": "circulacao-018",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Berma",
+    "pergunta": "A berma destina-se normalmente:",
+    "opcoes": [
+      "À circulação regular de veículos ligeiros",
+      "A situações específicas, como emergência, e não à circulação normal",
+      "A ultrapassagens pela direita",
+      "A estacionamento permanente em autoestrada"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A berma não é uma via normal de trânsito; o seu uso é restrito a situações previstas."
+  },
+  {
+    "id": "circulacao-019",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Velocidade",
+    "pergunta": "O condutor deve adaptar a velocidade principalmente:",
+    "opcoes": [
+      "Apenas ao limite máximo legal",
+      "Às condições da via, trânsito, veículo e visibilidade",
+      "Ao veículo que segue atrás",
+      "Ao horário da viagem"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Mesmo dentro do limite legal, a velocidade deve ser adequada às condições concretas."
+  },
+  {
+    "id": "circulacao-020",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Distância de segurança",
+    "pergunta": "A distância de segurança deve permitir:",
+    "opcoes": [
+      "Travar sem colisão se o veículo da frente parar subitamente",
+      "Circular mais depressa",
+      "Impedir ultrapassagens de outros condutores",
+      "Reduzir obrigatoriamente o consumo"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A distância de segurança deve ser suficiente para evitar colisão em caso de travagem brusca."
+  },
+  {
+    "id": "circulacao-021",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Cruzamento de veículos",
+    "pergunta": "Em via estreita com obstáculo do seu lado, o condutor deve:",
+    "opcoes": [
+      "Avançar sempre primeiro",
+      "Ceder passagem ao veículo que vem em sentido contrário, se necessário",
+      "Obrigar o outro veículo a recuar",
+      "Circular pela berma sem observar"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Quando o obstáculo está do seu lado, deve facilitar o cruzamento, cedendo se necessário."
+  },
+  {
+    "id": "circulacao-022",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Sinalização de manobras",
+    "pergunta": "O uso do indicador de direção confere prioridade ao condutor?",
+    "opcoes": [
+      "Sim, sempre",
+      "Não, apenas informa a intenção de manobra",
+      "Sim, se for usado com antecedência",
+      "Sim, em rotundas"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "O pisca informa a intenção, mas não dá prioridade nem dispensa cuidados."
+  },
+  {
+    "id": "circulacao-023",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Entrada em via",
+    "pergunta": "Ao entrar numa autoestrada pela via de aceleração, o condutor deve:",
+    "opcoes": [
+      "Entrar imediatamente sem observar",
+      "Adaptar a velocidade e ceder passagem aos veículos que já circulam",
+      "Parar sempre no fim da via de aceleração",
+      "Circular pela berma até encontrar espaço"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Na entrada em autoestrada, deve adequar a velocidade e inserir-se sem obrigar outros condutores a travagens bruscas."
+  },
+  {
+    "id": "circulacao-024",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Saída de via rápida",
+    "pergunta": "Para sair de uma autoestrada, o condutor deve:",
+    "opcoes": [
+      "Reduzir a velocidade preferencialmente na via de abrandamento",
+      "Travar bruscamente na faixa principal",
+      "Fazer marcha atrás se passar a saída",
+      "Parar na faixa de rodagem"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A redução de velocidade deve ser feita de forma progressiva, usando a via de abrandamento."
+  },
+  {
+    "id": "circulacao-025",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Ultrapassagem",
+    "pergunta": "É proibido ultrapassar quando:",
+    "opcoes": [
+      "A visibilidade é insuficiente para realizar a manobra em segurança",
+      "A via tem duas faixas de rodagem separadas",
+      "O veículo da frente circula devagar",
+      "Está de dia"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A ultrapassagem exige visibilidade e espaço suficientes; se não existirem, a manobra é perigosa e proibida."
+  },
+  {
+    "id": "circulacao-026",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Trânsito lento",
+    "pergunta": "Em fila de trânsito, o condutor deve evitar:",
+    "opcoes": [
+      "Manter distância adequada",
+      "Bloquear cruzamentos e passagens para peões",
+      "Observar os espelhos",
+      "Circular com atenção"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Mesmo em congestionamento, não se deve bloquear interseções ou passagens para peões."
+  },
+  {
+    "id": "circulacao-027",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Prioridade",
+    "pergunta": "Quem circula numa via sem prioridade e encontra sinal de STOP deve:",
+    "opcoes": [
+      "Parar e ceder passagem",
+      "Apenas abrandar",
+      "Avançar se vier da direita",
+      "Avançar se estiver atrasado"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "O STOP obriga à paragem e à cedência de passagem."
+  },
+  {
+    "id": "circulacao-028",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Circulação à direita",
+    "pergunta": "Em regra, os veículos devem circular:",
+    "opcoes": [
+      "O mais à esquerda possível",
+      "O mais à direita possível, salvo necessidade de manobra ou sinalização",
+      "Sempre na via central",
+      "Na berma quando disponível"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A circulação deve fazer-se pela direita, respeitando as condições da via e as manobras necessárias."
+  },
+  {
+    "id": "circulacao-029",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Cargas",
+    "pergunta": "A carga transportada num veículo deve estar:",
+    "opcoes": [
+      "Solta para facilitar a descarga",
+      "Bem acondicionada e sem comprometer a segurança",
+      "Colocada sempre no banco da frente",
+      "A tapar parcialmente a matrícula"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A carga deve estar segura, sem prejudicar visibilidade, estabilidade, matrícula ou iluminação."
+  },
+  {
+    "id": "circulacao-030",
+    "categoria": "Regras de circulação",
+    "subcategoria": "Comportamento",
+    "pergunta": "Uma condução defensiva implica:",
+    "opcoes": [
+      "Antecipar riscos e adaptar a condução",
+      "Confiar que os outros cumprem sempre as regras",
+      "Circular sempre devagar, mesmo sem motivo",
+      "Usar a buzina para impor prioridade"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Condução defensiva significa antecipar erros e riscos, mantendo margens de segurança."
+  },
+  {
+    "id": "seguranca-001",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Distância de reação",
+    "pergunta": "A distância de reação é a distância percorrida:",
+    "opcoes": [
+      "Desde que o condutor vê o perigo até iniciar a travagem",
+      "Desde que trava até parar",
+      "Depois de o veículo estar imobilizado",
+      "Apenas durante chuva"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A distância de reação corresponde ao espaço percorrido durante o tempo que o condutor demora a reagir."
+  },
+  {
+    "id": "seguranca-002",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Distância de travagem",
+    "pergunta": "A distância de travagem é a distância percorrida:",
+    "opcoes": [
+      "Antes de o condutor ver o perigo",
+      "Desde o início da travagem até à imobilização",
+      "Durante o tempo de reação",
+      "Apenas em piso seco"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A distância de travagem começa quando se aciona o travão e termina quando o veículo para."
+  },
+  {
+    "id": "seguranca-003",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Distância de paragem",
+    "pergunta": "A distância de paragem corresponde à soma de:",
+    "opcoes": [
+      "Distância de reação e distância de travagem",
+      "Distância de ultrapassagem e distância lateral",
+      "Distância de marcha atrás e distância de estacionamento",
+      "Largura da via e comprimento do veículo"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A distância total de paragem inclui o tempo de reação e o espaço necessário para travar."
+  },
+  {
+    "id": "seguranca-004",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Velocidade",
+    "pergunta": "Se a velocidade aumenta, a distância de travagem tende a:",
+    "opcoes": [
+      "Diminuir sempre",
+      "Aumentar significativamente",
+      "Manter-se igual",
+      "Desaparecer se os pneus forem novos"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Quanto maior a velocidade, maior a energia a dissipar e maior o espaço necessário para parar."
+  },
+  {
+    "id": "seguranca-005",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Álcool",
+    "pergunta": "O álcool afeta a condução porque:",
+    "opcoes": [
+      "Melhora os reflexos",
+      "Aumenta a atenção",
+      "Diminui reflexos, coordenação e perceção do risco",
+      "Só afeta condutores inexperientes"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "O álcool prejudica capacidades essenciais à condução, mesmo antes de a pessoa se sentir embriagada."
+  },
+  {
+    "id": "seguranca-006",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Fadiga",
+    "pergunta": "Um sinal de fadiga durante a condução é:",
+    "opcoes": [
+      "Aumento da concentração",
+      "Bocejos frequentes e dificuldade em manter a trajetória",
+      "Melhor visão noturna",
+      "Redução da distância de reação"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A fadiga reduz atenção, aumenta o tempo de reação e pode provocar desvios involuntários."
+  },
+  {
+    "id": "seguranca-007",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Fadiga",
+    "pergunta": "Se sentir sono intenso ao conduzir, deve:",
+    "opcoes": [
+      "Abrir a janela e continuar sempre",
+      "Aumentar o volume do rádio e continuar",
+      "Parar em local seguro e descansar",
+      "Conduzir mais depressa para chegar antes"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "A única solução segura para a sonolência relevante é parar e descansar."
+  },
+  {
+    "id": "seguranca-008",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Medicamentos",
+    "pergunta": "Alguns medicamentos podem afetar a condução porque:",
+    "opcoes": [
+      "Podem causar sonolência ou reduzir a atenção",
+      "Aumentam sempre os reflexos",
+      "Não têm qualquer efeito na condução",
+      "Substituem o descanso"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Medicamentos com efeito sedativo ou sobre o sistema nervoso podem comprometer a condução segura."
+  },
+  {
+    "id": "seguranca-009",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Cinto de segurança",
+    "pergunta": "O cinto de segurança deve ser utilizado:",
+    "opcoes": [
+      "Apenas pelo condutor",
+      "Apenas em autoestrada",
+      "Por todos os ocupantes, salvo exceções previstas",
+      "Apenas durante a noite"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "O cinto reduz o risco de lesão grave e deve ser usado por todos os ocupantes."
+  },
+  {
+    "id": "seguranca-010",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Crianças",
+    "pergunta": "As crianças devem ser transportadas:",
+    "opcoes": [
+      "Sem retenção se a viagem for curta",
+      "Com sistema de retenção adequado quando exigido",
+      "Sempre ao colo de um adulto",
+      "Apenas no banco da frente"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "As crianças devem usar sistemas de retenção adequados à sua idade, tamanho e peso, conforme as regras aplicáveis."
+  },
+  {
+    "id": "seguranca-011",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Airbag",
+    "pergunta": "Uma cadeira de criança voltada para trás não deve ser colocada em lugar com airbag frontal ativo porque:",
+    "opcoes": [
+      "O airbag pode causar lesões graves à criança",
+      "A criança fica com mais visibilidade",
+      "O cinto deixa de funcionar",
+      "O veículo não liga"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A abertura do airbag contra uma cadeira voltada para trás pode provocar lesões graves."
+  },
+  {
+    "id": "seguranca-012",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Visibilidade",
+    "pergunta": "Com nevoeiro intenso, o condutor deve:",
+    "opcoes": [
+      "Aumentar a velocidade para sair rapidamente da zona",
+      "Usar iluminação adequada e reduzir a velocidade",
+      "Circular sem luzes para não encandear",
+      "Aproximar-se muito do veículo da frente"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Com visibilidade reduzida, deve adequar a iluminação, reduzir a velocidade e aumentar a distância de segurança."
+  },
+  {
+    "id": "seguranca-013",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Chuva",
+    "pergunta": "Com chuva, a distância de travagem:",
+    "opcoes": [
+      "Pode aumentar devido à menor aderência",
+      "Diminui sempre",
+      "Não se altera",
+      "Só aumenta em autoestrada"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A água reduz a aderência dos pneus ao pavimento, aumentando a distância necessária para parar."
+  },
+  {
+    "id": "seguranca-014",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Aquaplanagem",
+    "pergunta": "A aquaplanagem ocorre quando:",
+    "opcoes": [
+      "O veículo fica sem combustível",
+      "Os pneus perdem contacto com o pavimento devido à água",
+      "O motor aquece demasiado",
+      "A bateria descarrega"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Na aquaplanagem, uma película de água impede o contacto normal entre pneu e estrada."
+  },
+  {
+    "id": "seguranca-015",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Aquaplanagem",
+    "pergunta": "Em caso de aquaplanagem, deve-se:",
+    "opcoes": [
+      "Travar bruscamente",
+      "Virar violentamente o volante",
+      "Segurar o volante e aliviar suavemente o acelerador",
+      "Acelerar para recuperar aderência"
+    ],
+    "respostaCorreta": 2,
+    "explicacao": "Deve evitar movimentos bruscos, manter o controlo e esperar que os pneus recuperem aderência."
+  },
+  {
+    "id": "seguranca-016",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Pneus",
+    "pergunta": "Pneus gastos podem causar:",
+    "opcoes": [
+      "Melhor aderência em chuva",
+      "Aumento do risco de derrapagem e aquaplanagem",
+      "Menor distância de travagem em todos os pisos",
+      "Impossibilidade de ligar o rádio"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Pneus em mau estado reduzem a aderência e comprometem a segurança."
+  },
+  {
+    "id": "seguranca-017",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Carga",
+    "pergunta": "Objetos soltos no habitáculo são perigosos porque:",
+    "opcoes": [
+      "Podem transformar-se em projéteis numa travagem ou colisão",
+      "Aumentam automaticamente a velocidade",
+      "Reduzem o consumo",
+      "Melhoram o conforto"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Numa travagem brusca, objetos soltos podem atingir os ocupantes com força."
+  },
+  {
+    "id": "seguranca-018",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Telemóvel",
+    "pergunta": "Usar o telemóvel durante a condução é perigoso porque:",
+    "opcoes": [
+      "Aumenta a atenção ao trânsito",
+      "Divide a atenção e aumenta o tempo de reação",
+      "Melhora a capacidade de travagem",
+      "Só é perigoso em autoestrada"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A distração reduz a capacidade de antecipar perigos e aumenta o tempo de reação."
+  },
+  {
+    "id": "seguranca-019",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Condução defensiva",
+    "pergunta": "A condução defensiva recomenda que o condutor:",
+    "opcoes": [
+      "Preveja possíveis erros dos outros utentes",
+      "Assuma que todos cumprem sempre as regras",
+      "Use sempre a buzina para se impor",
+      "Mantenha distância mínima do veículo da frente"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Conduzir defensivamente é antecipar riscos e manter margens de segurança."
+  },
+  {
+    "id": "seguranca-020",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Velocidade",
+    "pergunta": "Circular demasiado depressa para as condições da via pode ser perigoso mesmo se:",
+    "opcoes": [
+      "A velocidade estiver abaixo do limite máximo legal",
+      "O veículo for novo",
+      "O condutor tiver pressa",
+      "Houver música ligada"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "O limite máximo não dispensa adaptar a velocidade ao estado da via, visibilidade e trânsito."
+  },
+  {
+    "id": "seguranca-021",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Noite",
+    "pergunta": "Durante a condução noturna, o condutor deve ter especial cuidado porque:",
+    "opcoes": [
+      "A visibilidade é reduzida",
+      "Os travões deixam de funcionar",
+      "A prioridade muda sempre",
+      "É proibido reduzir a velocidade"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "À noite, a perceção de obstáculos, peões e distâncias é mais difícil."
+  },
+  {
+    "id": "seguranca-022",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Encandeamento",
+    "pergunta": "Se for encandeado por luzes de outro veículo, deve:",
+    "opcoes": [
+      "Olhar diretamente para os faróis",
+      "Reduzir a velocidade e orientar o olhar para a berma direita",
+      "Acelerar até passar o veículo",
+      "Desligar as suas luzes"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Evitar olhar diretamente para a luz e reduzir a velocidade ajuda a manter o controlo."
+  },
+  {
+    "id": "seguranca-023",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Derrapagem",
+    "pergunta": "Uma derrapagem pode ser provocada por:",
+    "opcoes": [
+      "Velocidade excessiva, travagem brusca ou pouca aderência",
+      "Uso correto dos espelhos",
+      "Distância de segurança adequada",
+      "Pneus em excelente estado e velocidade moderada"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Derrapagens ocorrem quando se perde aderência, sobretudo por manobras bruscas ou piso escorregadio."
+  },
+  {
+    "id": "seguranca-024",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Peões vulneráveis",
+    "pergunta": "Junto a escolas, o condutor deve:",
+    "opcoes": [
+      "Aumentar a velocidade para reduzir tempo na zona",
+      "Moderar a velocidade e prever comportamento imprevisível de crianças",
+      "Buzinar continuamente",
+      "Circular pela esquerda"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Crianças podem atravessar de forma inesperada, exigindo atenção e velocidade reduzida."
+  },
+  {
+    "id": "seguranca-025",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Motociclistas",
+    "pergunta": "Ao aproximar-se de motociclistas, deve recordar que:",
+    "opcoes": [
+      "São menos vulneráveis que automóveis",
+      "Podem ser menos visíveis e mais vulneráveis em colisões",
+      "Devem sempre ceder passagem a ligeiros",
+      "Não precisam de distância lateral"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Motociclistas são mais vulneráveis e podem ficar facilmente ocultos em ângulos mortos."
+  },
+  {
+    "id": "seguranca-026",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Ângulo morto",
+    "pergunta": "O ângulo morto é uma zona:",
+    "opcoes": [
+      "Sempre visível pelo espelho interior",
+      "Não visível diretamente pelos espelhos, exigindo verificação adicional",
+      "Onde é obrigatório estacionar",
+      "Exclusiva de veículos pesados"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Antes de mudar de via, deve confirmar se há veículos no ângulo morto."
+  },
+  {
+    "id": "seguranca-027",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Emergência",
+    "pergunta": "Em caso de avaria numa via rápida, deve-se:",
+    "opcoes": [
+      "Ficar dentro do veículo sem sinalizar",
+      "Sinalizar a imobilização e proteger os ocupantes em segurança",
+      "Reparar o veículo no meio da faixa",
+      "Fazer marcha atrás até uma saída"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A prioridade é sinalizar, proteger pessoas e evitar novos acidentes."
+  },
+  {
+    "id": "seguranca-028",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Triângulo",
+    "pergunta": "O triângulo de pré-sinalização serve para:",
+    "opcoes": [
+      "Avisar antecipadamente os outros condutores de perigo ou veículo imobilizado",
+      "Substituir o seguro automóvel",
+      "Indicar que o condutor está com pressa",
+      "Permitir estacionamento proibido"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "O triângulo alerta os restantes condutores para uma situação de perigo na via."
+  },
+  {
+    "id": "seguranca-029",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Colete refletor",
+    "pergunta": "O colete refletor aumenta a segurança porque:",
+    "opcoes": [
+      "Torna o condutor mais visível fora do veículo",
+      "Permite conduzir mais depressa",
+      "Substitui as luzes do veículo",
+      "Evita todas as avarias"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "O colete ajuda os outros condutores a verem uma pessoa fora do veículo, especialmente com pouca luz."
+  },
+  {
+    "id": "seguranca-030",
+    "categoria": "Segurança rodoviária",
+    "subcategoria": "Atenção",
+    "pergunta": "A atenção do condutor deve estar focada:",
+    "opcoes": [
+      "Apenas no veículo da frente",
+      "No ambiente de condução, antecipando riscos próximos e distantes",
+      "Apenas no velocímetro",
+      "No telemóvel quando parado em fila"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Conduzir bem exige observação ampla, antecipação e adaptação constante."
+  },
+  {
+    "id": "veiculo-001",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Pneus",
+    "pergunta": "A pressão dos pneus deve ser verificada:",
+    "opcoes": [
+      "Apenas quando há furo",
+      "Regularmente e de acordo com as recomendações do fabricante",
+      "Só depois de viagens longas com pneus quentes",
+      "Nunca, se o veículo for recente"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "A pressão correta melhora segurança, consumo e desgaste dos pneus."
+  },
+  {
+    "id": "veiculo-002",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Pneus",
+    "pergunta": "Pressão demasiado baixa nos pneus pode causar:",
+    "opcoes": [
+      "Maior consumo e desgaste irregular",
+      "Melhor estabilidade em todas as situações",
+      "Menor aquecimento dos pneus",
+      "Impossibilidade de usar os travões"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Pneus com pressão incorreta aumentam consumo, desgaste e podem reduzir a segurança."
+  },
+  {
+    "id": "veiculo-003",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Travões",
+    "pergunta": "Se o pedal do travão parecer anormalmente mole, o condutor deve:",
+    "opcoes": [
+      "Ignorar se o veículo ainda anda",
+      "Mandar verificar o sistema de travagem",
+      "Conduzir mais depressa para testar",
+      "Usar só o travão de mão em andamento"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Alterações no comportamento do travão podem indicar avaria e exigem verificação."
+  },
+  {
+    "id": "veiculo-004",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Óleo",
+    "pergunta": "O nível do óleo do motor deve ser:",
+    "opcoes": [
+      "Mantido dentro dos limites indicados pelo fabricante",
+      "Sempre acima do máximo",
+      "Verificado apenas na inspeção periódica",
+      "Ignorado em veículos a gasolina"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Óleo insuficiente ou em excesso pode danificar o motor."
+  },
+  {
+    "id": "veiculo-005",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Iluminação",
+    "pergunta": "As luzes do veículo servem para:",
+    "opcoes": [
+      "Ver e ser visto",
+      "Apenas decorar o veículo",
+      "Apenas conduzir mais depressa",
+      "Substituir os espelhos"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A iluminação ajuda o condutor a ver e permite que os outros utentes o vejam."
+  },
+  {
+    "id": "veiculo-006",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Luzes",
+    "pergunta": "As luzes de máximos devem ser desligadas ou substituídas por médios quando:",
+    "opcoes": [
+      "Possam encandear outros utentes",
+      "A estrada está vazia",
+      "O condutor quer ver mais longe",
+      "Circula fora de localidade"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Os máximos não devem ser usados quando encandeiam outros condutores ou peões."
+  },
+  {
+    "id": "veiculo-007",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Matrícula",
+    "pergunta": "As chapas de matrícula devem estar:",
+    "opcoes": [
+      "Visíveis e legíveis",
+      "Tapadas pela carga se necessário",
+      "Retiradas em viagens curtas",
+      "Iluminadas apenas durante o dia"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A matrícula deve manter-se visível e legível para identificação do veículo."
+  },
+  {
+    "id": "veiculo-008",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Documentos",
+    "pergunta": "O condutor deve circular com documentos válidos relativos:",
+    "opcoes": [
+      "Ao condutor e ao veículo, conforme exigido",
+      "Apenas ao rádio do veículo",
+      "Apenas ao combustível",
+      "Apenas à última oficina"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A condução exige habilitação e documentação válida do veículo, conforme aplicável."
+  },
+  {
+    "id": "veiculo-009",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Inspeção",
+    "pergunta": "A inspeção periódica obrigatória serve para:",
+    "opcoes": [
+      "Confirmar condições de segurança e ambientais do veículo",
+      "Aumentar a potência do motor",
+      "Substituir o seguro",
+      "Autorizar excesso de velocidade"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A inspeção verifica elementos essenciais de segurança e emissões."
+  },
+  {
+    "id": "veiculo-010",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Condução económica",
+    "pergunta": "Uma condução económica caracteriza-se por:",
+    "opcoes": [
+      "Acelerações bruscas e travagens fortes",
+      "Velocidade constante e antecipação do trânsito",
+      "Circular sempre em rotações muito altas",
+      "Usar sempre mudanças baixas"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Antecipar, evitar acelerações bruscas e manter velocidade estável reduz consumo e desgaste."
+  },
+  {
+    "id": "veiculo-011",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Ambiente",
+    "pergunta": "Para reduzir emissões e consumo, o condutor deve evitar:",
+    "opcoes": [
+      "Acelerações e travagens bruscas",
+      "Verificar pneus",
+      "Manter velocidade moderada",
+      "Planeamento da viagem"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Condução agressiva aumenta consumo, emissões e desgaste mecânico."
+  },
+  {
+    "id": "veiculo-012",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Carga",
+    "pergunta": "A carga no tejadilho pode influenciar:",
+    "opcoes": [
+      "Estabilidade e consumo do veículo",
+      "A cor do veículo",
+      "O funcionamento do rádio apenas",
+      "A validade da carta"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Carga no tejadilho aumenta resistência ao ar e pode alterar estabilidade."
+  },
+  {
+    "id": "veiculo-013",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Reboque",
+    "pergunta": "Ao conduzir com reboque, o condutor deve ter em conta que:",
+    "opcoes": [
+      "A distância de travagem pode aumentar",
+      "O veículo trava sempre melhor",
+      "A manobra é igual a conduzir sem reboque",
+      "Não precisa de verificar a carga"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "O reboque altera peso, comprimento, estabilidade e distância de travagem."
+  },
+  {
+    "id": "veiculo-014",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Velocidade",
+    "pergunta": "Dentro das localidades, os automóveis ligeiros estão geralmente sujeitos a limite máximo de:",
+    "opcoes": [
+      "30 km/h",
+      "50 km/h",
+      "90 km/h",
+      "120 km/h"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Em regra, dentro das localidades o limite geral para ligeiros é 50 km/h, salvo sinalização diferente."
+  },
+  {
+    "id": "veiculo-015",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Velocidade",
+    "pergunta": "Em autoestrada, os automóveis ligeiros sem reboque têm geralmente limite máximo de:",
+    "opcoes": [
+      "80 km/h",
+      "90 km/h",
+      "100 km/h",
+      "120 km/h"
+    ],
+    "respostaCorreta": 3,
+    "explicacao": "Em regra, o limite máximo para ligeiros sem reboque em autoestrada é 120 km/h, salvo sinalização diferente."
+  },
+  {
+    "id": "veiculo-016",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Painel de instrumentos",
+    "pergunta": "Uma luz avisadora vermelha no painel indica geralmente:",
+    "opcoes": [
+      "Informação sem importância",
+      "Situação que pode exigir paragem ou verificação imediata",
+      "Apenas temperatura exterior",
+      "Sistema de som ligado"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Avisos vermelhos costumam indicar problemas importantes que podem comprometer segurança ou mecânica."
+  },
+  {
+    "id": "veiculo-017",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Direção",
+    "pergunta": "Se a direção apresentar vibrações anormais, deve-se:",
+    "opcoes": [
+      "Ignorar sempre",
+      "Verificar pneus, rodas ou direção",
+      "Aumentar a velocidade",
+      "Circular apenas à noite"
+    ],
+    "respostaCorreta": 1,
+    "explicacao": "Vibrações podem indicar desequilíbrio, desgaste ou problemas mecânicos."
+  },
+  {
+    "id": "veiculo-018",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Espelhos",
+    "pergunta": "Os espelhos devem ser regulados:",
+    "opcoes": [
+      "Antes de iniciar a marcha",
+      "Durante uma ultrapassagem",
+      "Apenas na inspeção",
+      "Nunca, se já vierem regulados de fábrica"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A regulação correta dos espelhos deve ser feita antes de iniciar a condução."
+  },
+  {
+    "id": "veiculo-019",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Posto de condução",
+    "pergunta": "A posição correta do condutor deve permitir:",
+    "opcoes": [
+      "Alcançar comandos e pedais com controlo e conforto",
+      "Conduzir deitado",
+      "Ficar o mais longe possível do volante sem controlo dos pedais",
+      "Não usar encosto"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Uma posição adequada melhora controlo, visibilidade e segurança."
+  },
+  {
+    "id": "veiculo-020",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Manutenção",
+    "pergunta": "A manutenção preventiva do veículo serve para:",
+    "opcoes": [
+      "Reduzir riscos de avaria e aumentar segurança",
+      "Evitar cumprir regras de trânsito",
+      "Permitir circular sem documentos",
+      "Aumentar legalmente a velocidade máxima"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Manter o veículo em boas condições reduz avarias e melhora a segurança rodoviária."
+  },
+  {
+    "id": "veiculo-021",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Combustível",
+    "pergunta": "Conduzir com o depósito quase vazio pode ser problemático porque:",
+    "opcoes": [
+      "Pode provocar paragem inesperada e situações de risco",
+      "Melhora a travagem",
+      "Aumenta a aderência",
+      "Reduz sempre o desgaste do motor"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Ficar sem combustível em circulação pode criar perigo, sobretudo em vias rápidas."
+  },
+  {
+    "id": "veiculo-022",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Emissões",
+    "pergunta": "Um veículo com fumo anormal pelo escape deve ser:",
+    "opcoes": [
+      "Verificado, pois pode indicar avaria ou emissões excessivas",
+      "Conduzido sempre em rotações altas",
+      "Ignorado se continuar a andar",
+      "Usado apenas em autoestrada"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Fumo anormal pode indicar problemas mecânicos e impacto ambiental aumentado."
+  },
+  {
+    "id": "veiculo-023",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Climatização",
+    "pergunta": "O desembaciador deve ser usado quando:",
+    "opcoes": [
+      "Os vidros embaciados reduzem a visibilidade",
+      "O condutor quer aumentar a velocidade",
+      "O veículo está estacionado há muitos dias",
+      "A matrícula está suja"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Vidros embaciados prejudicam a visibilidade e devem ser limpos/desembaciados antes de circular."
+  },
+  {
+    "id": "veiculo-024",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Luzes de emergência",
+    "pergunta": "As luzes avisadoras de perigo, ou quatro piscas, devem ser usadas:",
+    "opcoes": [
+      "Para sinalizar perigo ou imobilização anormal",
+      "Para estacionar onde é proibido",
+      "Sempre que se conduz depressa",
+      "Como substituto dos indicadores de direção em qualquer manobra"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Os quatro piscas sinalizam perigo, avaria, imobilização ou situações anormais."
+  },
+  {
+    "id": "veiculo-025",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Caixa de velocidades",
+    "pergunta": "Usar uma mudança adequada ajuda a:",
+    "opcoes": [
+      "Controlar melhor o veículo e reduzir consumo",
+      "Eliminar necessidade de travões",
+      "Evitar usar espelhos",
+      "Aumentar sempre a velocidade"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "A mudança correta melhora controlo, eficiência e resposta do veículo."
+  },
+  {
+    "id": "veiculo-026",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Travagem",
+    "pergunta": "Travagens bruscas frequentes tendem a:",
+    "opcoes": [
+      "Aumentar desgaste e consumo",
+      "Reduzir sempre a distância de paragem",
+      "Melhorar a condução ecológica",
+      "Impedir derrapagens em chuva"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Travagens bruscas aumentam desgaste, consumo e risco de perda de controlo."
+  },
+  {
+    "id": "veiculo-027",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Planeamento",
+    "pergunta": "Planear a viagem ajuda a:",
+    "opcoes": [
+      "Reduzir stress, consumo e manobras de última hora",
+      "Ignorar sinalização",
+      "Circular sempre acima dos limites",
+      "Dispensar manutenção"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Planeamento reduz pressa, condução agressiva e decisões repentinas."
+  },
+  {
+    "id": "veiculo-028",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Veículo elétrico",
+    "pergunta": "Num veículo elétrico ou híbrido, o condutor deve lembrar que:",
+    "opcoes": [
+      "Pode ser mais silencioso e menos percetível por peões",
+      "Não precisa de pneus",
+      "Não precisa de travões",
+      "Pode ignorar limites de velocidade"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Veículos silenciosos podem ser menos notados por peões e ciclistas, exigindo atenção reforçada."
+  },
+  {
+    "id": "veiculo-029",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Estabilidade",
+    "pergunta": "Uma carga mal distribuída pode afetar:",
+    "opcoes": [
+      "A estabilidade e a travagem do veículo",
+      "A cor dos faróis",
+      "A validade do seguro automaticamente",
+      "O nome do condutor"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Carga mal distribuída altera o comportamento dinâmico do veículo e pode aumentar o risco de acidente."
+  },
+  {
+    "id": "veiculo-030",
+    "categoria": "Veículo e ambiente",
+    "subcategoria": "Ambiente",
+    "pergunta": "Desligar o motor em paragens prolongadas, quando adequado, pode:",
+    "opcoes": [
+      "Reduzir consumo e emissões",
+      "Aumentar obrigatoriamente a velocidade",
+      "Eliminar necessidade de combustível",
+      "Impedir o uso de cinto"
+    ],
+    "respostaCorreta": 0,
+    "explicacao": "Evitar funcionamento desnecessário do motor reduz consumo, ruído e emissões."
+  }
+]
