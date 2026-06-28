@@ -1,12 +1,12 @@
-const STORAGE_KEY = "flashcards-conducao-progress-v1";
-const VALID_STATUSES = new Set(["right", "wrong", "hard"]);
+const STORAGE_KEY = "quiz-conducao-progress-v1";
+const VALID_STATUSES = new Set(["right", "wrong"]);
 
 const state = {
   progress: loadProgress(),
   sessionCards: [],
   currentIndex: 0,
   currentMode: "home",
-  answerVisible: false
+  answered: false
 };
 
 const els = {
@@ -17,7 +17,6 @@ const els = {
   totalProgressBar: document.getElementById("totalProgressBar"),
   randomModeBtn: document.getElementById("randomModeBtn"),
   reviewWrongBtn: document.getElementById("reviewWrongBtn"),
-  reviewHardBtn: document.getElementById("reviewHardBtn"),
   resetProgressBtn: document.getElementById("resetProgressBtn"),
   backHomeBtn: document.getElementById("backHomeBtn"),
   studyModeLabel: document.getElementById("studyModeLabel"),
@@ -25,13 +24,11 @@ const els = {
   cardStats: document.getElementById("cardStats"),
   cardGroupLabel: document.getElementById("cardGroupLabel"),
   questionText: document.getElementById("questionText"),
-  answerBox: document.getElementById("answerBox"),
-  answerText: document.getElementById("answerText"),
-  showAnswerBtn: document.getElementById("showAnswerBtn"),
-  gradeButtons: document.getElementById("gradeButtons"),
-  wrongBtn: document.getElementById("wrongBtn"),
-  hardBtn: document.getElementById("hardBtn"),
-  rightBtn: document.getElementById("rightBtn"),
+  optionsContainer: document.getElementById("optionsContainer"),
+  feedbackBox: document.getElementById("feedbackBox"),
+  feedbackTitle: document.getElementById("feedbackTitle"),
+  explanationText: document.getElementById("explanationText"),
+  nextQuestionBtn: document.getElementById("nextQuestionBtn"),
   emptyState: document.getElementById("emptyState")
 };
 
@@ -45,30 +42,28 @@ function init() {
 function bindEvents() {
   els.randomModeBtn.addEventListener("click", () => startSession("random", getAllCards(true)));
   els.reviewWrongBtn.addEventListener("click", () => startSession("wrong", getCardsByStatus("wrong", true)));
-  els.reviewHardBtn.addEventListener("click", () => startSession("hard", getCardsByStatus("hard", true)));
   els.backHomeBtn.addEventListener("click", showHome);
-  els.showAnswerBtn.addEventListener("click", showAnswer);
-  els.wrongBtn.addEventListener("click", () => gradeCurrentCard("wrong"));
-  els.hardBtn.addEventListener("click", () => gradeCurrentCard("hard"));
-  els.rightBtn.addEventListener("click", () => gradeCurrentCard("right"));
+  els.nextQuestionBtn.addEventListener("click", goToNextQuestion);
   els.resetProgressBtn.addEventListener("click", resetProgress);
 }
 
 function renderHome() {
   const allCards = getAllCards();
   const totalCards = allCards.length;
-  const mastered = allCards.filter(({ card }) => getCardStatus(card.id) === "right").length;
-  const percent = totalCards === 0 ? 0 : Math.round((mastered / totalCards) * 100);
+  const correct = allCards.filter(({ card }) => getCardStatus(card.id) === "right").length;
+  const wrong = allCards.filter(({ card }) => getCardStatus(card.id) === "wrong").length;
+  const attempts = allCards.reduce((sum, { card }) => sum + getQuestionProgress(card.id).attempts, 0);
+  const percent = totalCards === 0 ? 0 : Math.round((correct / totalCards) * 100);
 
-  els.totalMastered.textContent = `${mastered}/${totalCards}`;
+  els.totalMastered.textContent = `${correct}/${totalCards}`;
   els.totalProgressBar.style.width = `${percent}%`;
   els.groupsContainer.innerHTML = "";
 
   FLASHCARD_GROUPS.forEach((group) => {
     const total = group.cards.length;
     const right = group.cards.filter((card) => getCardStatus(card.id) === "right").length;
-    const wrong = group.cards.filter((card) => getCardStatus(card.id) === "wrong").length;
-    const hard = group.cards.filter((card) => getCardStatus(card.id) === "hard").length;
+    const wrongCount = group.cards.filter((card) => getCardStatus(card.id) === "wrong").length;
+    const groupAttempts = group.cards.reduce((sum, card) => sum + getQuestionProgress(card.id).attempts, 0);
     const groupPercent = total === 0 ? 0 : Math.round((right / total) * 100);
 
     const article = document.createElement("article");
@@ -80,7 +75,7 @@ function renderHome() {
         <div class="progress-fill" style="width: ${groupPercent}%"></div>
       </div>
       <div class="group-footer">
-        <span class="group-progress">${right}/${total} dominadas · ${wrong} erradas · ${hard} difíceis</span>
+        <span class="group-progress">${right}/${total} certas · ${wrongCount} erradas · ${groupAttempts} tentativas</span>
         <button class="primary-button" type="button">Estudar</button>
       </div>
     `;
@@ -91,76 +86,107 @@ function renderHome() {
 
     els.groupsContainer.appendChild(article);
   });
+
+  els.reviewWrongBtn.disabled = wrong === 0;
+  els.reviewWrongBtn.textContent = wrong === 0 ? "Rever erradas" : `Rever erradas (${wrong})`;
+  els.cardStats.textContent = `${correct} certas · ${wrong} erradas · ${attempts} tentativas`;
 }
 
 function startSession(mode, cards) {
   state.currentMode = mode;
   state.sessionCards = Array.isArray(cards) ? cards : [];
   state.currentIndex = 0;
-  state.answerVisible = false;
+  state.answered = false;
 
   const labels = {
     group: "Grupo de estudo",
     random: "Modo aleatório",
-    wrong: "Rever erradas",
-    hard: "Rever difíceis"
+    wrong: "Rever erradas"
   };
 
-  els.studyModeLabel.textContent = labels[mode] || "Estudo";
+  els.studyModeLabel.textContent = labels[mode] || "Quiz";
   els.homeView.classList.remove("active");
   els.studyView.classList.add("active");
-  renderCurrentCard();
+  renderCurrentQuestion();
 }
 
-function renderCurrentCard() {
+function renderCurrentQuestion() {
   const current = state.sessionCards[state.currentIndex];
   const total = state.sessionCards.length;
 
   els.emptyState.classList.toggle("hidden", total !== 0);
-  els.showAnswerBtn.classList.toggle("hidden", total === 0);
-  els.gradeButtons.classList.add("hidden");
-  els.answerBox.classList.add("hidden");
-  state.answerVisible = false;
+  els.nextQuestionBtn.classList.add("hidden");
+  els.feedbackBox.className = "feedback-box hidden";
+  els.feedbackTitle.textContent = "";
+  els.explanationText.textContent = "";
+  els.optionsContainer.innerHTML = "";
+  state.answered = false;
 
   if (!current) {
     els.cardCounter.textContent = "0/0";
-    els.cardStats.textContent = "0 certas · 0 erradas · 0 difíceis";
+    els.cardStats.textContent = "0 certas · 0 erradas · 0 tentativas";
     els.cardGroupLabel.textContent = "";
-    els.questionText.textContent = "Sem cartões para rever";
-    els.answerText.textContent = "";
+    els.questionText.textContent = "Sem perguntas para rever";
     return;
   }
 
   const stats = getSessionStats();
   els.cardCounter.textContent = `${state.currentIndex + 1}/${total}`;
-  els.cardStats.textContent = `${stats.right} certas · ${stats.wrong} erradas · ${stats.hard} difíceis`;
-  els.cardGroupLabel.textContent = current.group.title;
+  els.cardStats.textContent = `${stats.right} certas · ${stats.wrong} erradas · ${stats.attempts} tentativas`;
+  els.cardGroupLabel.textContent = `${current.card.categoria} · ${current.group.title}`;
   els.questionText.textContent = current.card.pergunta;
-  els.answerText.textContent = current.card.resposta;
-  els.showAnswerBtn.textContent = "Mostrar resposta";
+  els.nextQuestionBtn.textContent = state.currentIndex < total - 1 ? "Próxima pergunta" : "Terminar";
+
+  current.card.opcoes.forEach((option) => {
+    const button = document.createElement("button");
+    button.className = "option-button";
+    button.type = "button";
+    button.textContent = option;
+    button.addEventListener("click", () => selectOption(option));
+    els.optionsContainer.appendChild(button);
+  });
 }
 
-function showAnswer() {
-  if (!state.sessionCards[state.currentIndex]) return;
-  state.answerVisible = true;
-  els.answerBox.classList.remove("hidden");
-  els.showAnswerBtn.classList.add("hidden");
-  els.gradeButtons.classList.remove("hidden");
-}
-
-function gradeCurrentCard(status) {
+function selectOption(selectedOption) {
   const current = state.sessionCards[state.currentIndex];
-  if (!current || !VALID_STATUSES.has(status)) return;
+  if (!current || state.answered) return;
 
-  state.progress[current.card.id] = {
-    status,
-    updatedAt: new Date().toISOString()
-  };
-  saveProgress();
+  const isCorrect = selectedOption === current.card.respostaCorreta;
+  state.answered = true;
+  saveAnswer(current.card.id, isCorrect);
+  markOptions(selectedOption, current.card.respostaCorreta);
+  showFeedback(isCorrect, current.card.explicacao);
+  els.nextQuestionBtn.classList.remove("hidden");
 
+  const stats = getSessionStats();
+  els.cardStats.textContent = `${stats.right} certas · ${stats.wrong} erradas · ${stats.attempts} tentativas`;
+}
+
+function markOptions(selectedOption, correctOption) {
+  Array.from(els.optionsContainer.children).forEach((button) => {
+    button.disabled = true;
+
+    if (button.textContent === correctOption) {
+      button.classList.add("correct");
+    }
+
+    if (button.textContent === selectedOption && selectedOption !== correctOption) {
+      button.classList.add("wrong");
+    }
+  });
+}
+
+function showFeedback(isCorrect, explanation) {
+  els.feedbackBox.classList.remove("hidden", "correct", "wrong");
+  els.feedbackBox.classList.add(isCorrect ? "correct" : "wrong");
+  els.feedbackTitle.textContent = isCorrect ? "Resposta certa" : "Resposta errada";
+  els.explanationText.textContent = explanation;
+}
+
+function goToNextQuestion() {
   if (state.currentIndex < state.sessionCards.length - 1) {
     state.currentIndex += 1;
-    renderCurrentCard();
+    renderCurrentQuestion();
     return;
   }
 
@@ -181,7 +207,7 @@ function resetProgress() {
   saveProgress();
   renderHome();
   if (els.studyView.classList.contains("active")) {
-    renderCurrentCard();
+    renderCurrentQuestion();
   }
 }
 
@@ -196,21 +222,39 @@ function getCardsByStatus(status, shuffled = false) {
 }
 
 function getCardStatus(cardId) {
-  const status = state.progress[cardId]?.status;
+  const status = getQuestionProgress(cardId).status;
   return VALID_STATUSES.has(status) ? status : "new";
+}
+
+function getQuestionProgress(cardId) {
+  return normalizeQuestionProgress(state.progress[cardId]);
 }
 
 function getSessionStats() {
   return state.sessionCards.reduce(
     (acc, { card }) => {
-      const status = getCardStatus(card.id);
-      if (status === "right") acc.right += 1;
-      if (status === "wrong") acc.wrong += 1;
-      if (status === "hard") acc.hard += 1;
+      const progress = getQuestionProgress(card.id);
+      if (progress.status === "right") acc.right += 1;
+      if (progress.status === "wrong") acc.wrong += 1;
+      acc.attempts += progress.attempts;
       return acc;
     },
-    { right: 0, wrong: 0, hard: 0 }
+    { right: 0, wrong: 0, attempts: 0 }
   );
+}
+
+function saveAnswer(cardId, isCorrect) {
+  const current = getQuestionProgress(cardId);
+
+  state.progress[cardId] = {
+    status: isCorrect ? "right" : "wrong",
+    attempts: current.attempts + 1,
+    correctAnswers: current.correctAnswers + (isCorrect ? 1 : 0),
+    wrongAnswers: current.wrongAnswers + (isCorrect ? 0 : 1),
+    updatedAt: new Date().toISOString()
+  };
+
+  saveProgress();
 }
 
 function loadProgress() {
@@ -237,8 +281,35 @@ function normalizeProgress(progress) {
   }
 
   return Object.fromEntries(
-    Object.entries(progress).filter(([, value]) => value && VALID_STATUSES.has(value.status))
+    Object.entries(progress).map(([cardId, value]) => [cardId, normalizeQuestionProgress(value)])
   );
+}
+
+function normalizeQuestionProgress(value) {
+  if (!value || typeof value !== "object") {
+    return {
+      status: "new",
+      attempts: 0,
+      correctAnswers: 0,
+      wrongAnswers: 0
+    };
+  }
+
+  const status = VALID_STATUSES.has(value.status) ? value.status : "new";
+  const attempts = toSafeNumber(value.attempts);
+  const correctAnswers = toSafeNumber(value.correctAnswers);
+  const wrongAnswers = toSafeNumber(value.wrongAnswers);
+
+  return {
+    status,
+    attempts,
+    correctAnswers,
+    wrongAnswers
+  };
+}
+
+function toSafeNumber(value) {
+  return Number.isFinite(Number(value)) && Number(value) > 0 ? Number(value) : 0;
 }
 
 function shuffle(items) {
